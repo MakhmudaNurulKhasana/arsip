@@ -136,3 +136,40 @@
         "use strict";
         $.MainApp.init();
     }(window.jQuery);
+
+
+function klik_laksanakan(){
+    const laksanakan = document.getElementById("laksanakan");
+    if(laksanakan.style.color == "grey"){
+        laksanakan.style.color = "limegreen";
+    }else{
+        laksanakan.style.color = "grey";
+    }
+}
+
+function klik_abaikan(){
+    const abaikan = document.getElementById("abaikan");
+    if(abaikan.style.color == "grey"){
+        abaikan.style.color = "red";
+    }else{
+        abaikan.style.color = "grey";
+    }
+}
+
+function klik_laksanakan2(){
+    const laksanakan2 = document.getElementById("laksanakan2");
+    if(laksanakan2.style.color == "grey"){
+        laksanakan2.style.color = "limegreen";
+    }else{
+        laksanakan2.style.color = "grey";
+    }
+}
+
+function klik_abaikan2(){
+    const abaikan2 = document.getElementById("abaikan2");
+    if(abaikan2.style.color == "grey"){
+        abaikan2.style.color = "red";
+    }else{
+        abaikan2.style.color = "grey";
+    }
+}
