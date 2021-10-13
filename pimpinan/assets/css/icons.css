@@ -18009,4 +18009,8 @@ readers do not read off random characters that represent icons */
   content: '\e14f';
   /* '' */
 }
+
+#icon{
+  color: black;
+}
 /*# sourceMappingURL=icons.css.map */

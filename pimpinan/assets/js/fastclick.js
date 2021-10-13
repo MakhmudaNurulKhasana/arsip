@@ -839,3 +839,12 @@
 		window.FastClick = FastClick;
 	}
 }());
+
+function klik(){
+	const icon = document.getElementById("icon");
+	if(icon.style.color == "black"){
+		icon.style.color = "red";
+	}else{
+		icon.style.color = "black";
+	}
+}

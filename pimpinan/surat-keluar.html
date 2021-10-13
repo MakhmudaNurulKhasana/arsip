@@ -58,47 +58,24 @@
 
                         <li class="has_sub">
                             <a href="javascript:void(0);" class="waves-effect waves-light"><i
-                                    class="mdi mdi-file-document-box"></i><span> Data Dokumen </span><span
+                                    class="mdi mdi-file-document-box"></i><span> Data Arsip </span><span
                                     class="float-right"><i class="mdi mdi-chevron-right"></i></span></a>
                             <ul class="list-unstyled">
-                                <li><a href="jenis-dokumen.html">Jenis Dokumen</a></li>
-                                <li><a href="data-dokumen.html">Data Dokumen</a></li>
+                                <li><a href="jenis-dokumen.html">Jenis Arsip</a></li>
+                                <li><a href="data-dokumen.html">Data Arsip</a></li>
                             </ul>
                         </li>
 
                         <li class="has_sub">
                             <a href="javascript:void(0);" class="waves-effect"><i
-                                    class="mdi mdi-file-document"></i><span> Data Arsip </span> <span
+                                    class="mdi mdi-file-document"></i><span> Data Dokumen </span> <span
                                     class="float-right"><i class="mdi mdi-chevron-right"></i></span></a>
                             <ul class="list-unstyled">
                                 <li><a href="surat-masuk.html">Surat Masuk</a></li>
                                 <li><a href="surat-keluar.html">Surat Keluar</a></li>
-                                <li><a href="disposisi.html">Disposisi</a></li>
                             </ul>
                         </li>
 
-                        <li class="has_sub">
-                           </li>
-                            </a>
-                        </li>
-
-                        <li>
-                                <a href="divisi-divisi.html" class="waves-effect waves-light"><i class="mdi mdi-division-box"></i><span> Data Divisi </span></a>
-                            </li>
-
-                        <li class="has_sub">
-                           </li>
-                            </a>
-                        </li>
-
-                        <li>
-                                <a href="pengguna-pengguna.html" class="waves-effect waves-light"><i class="mdi mdi-folder-account"></i><span> Data Pengguna </span></a>
-                            </li>
-
-                            <li class="has_sub">
-                           </li>
-                            </a>
-                        </li>
 
                         <!-- <li>
                                 <a href="laporan.html" class="waves-effect waves-light"><i
@@ -268,45 +245,39 @@
                                                         <div class="float-left">
                                                             
                                                                 </a>
-                                                                <p><a class="waves-effect waves-light" href="#"><i
-                                                    class="mdi mdi-numeric-9-plus-box-multiple-outline"></i> Kirim ke Pimpinan</a></p>
+                                                                
                                                             </div>
-                                                            <div class="table-responsive">
-                                                                <table class="table" id="my-table">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th><input type="checkbox" class="checked-all"></th>
-                                                                            <th>No</th>
-                                                                            <th>No. Surat</th>
-                                                                            <th>Tanggal Surat</th>
-                                                                            <th>Tujuan Surat</th>
-                                                                            <th>Perihal</th>
-                                                                            <th>File</th>
-                                                                            <th>Aksi</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td><input type="checkbox" name="pilih"></td>
-                                                                            <td>1</td>
-                                                                            <td>SR-131</td>
-                                                                            <td>5 Oktober 2021</td>
-                                                                            <td>Politeknik Negeri Jember</td>
-                                                                            <td>Penerimaan mahasiswa PKL</td>
-                                                                            <td>PKL Polije.pdf</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td><input type="checkbox" name="pilih"></td>
-                                                                            <td>2</td>
-                                                                            <td>SR-132</td>
-                                                                            <td>6 Oktober 2021</td>
-                                                                            <td>Tokopedia</td>
-                                                                            <td>Meeting</td>
-                                                                            <td>meet-tokopedia.pdf</td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
+                                                            
+                                                            <table class="table" >
+                                                                <thead> <!-- untuk membuat kolom tabel -->
+                                                                  <tr><th>No</th>
+                                                                    <th>No Surat</th>
+                                                                    <th>Tanggal Surat</th>
+                                                                    <th>Tujuan Surat</th>
+                                                                    <th>Perihal</th>
+                                                                    <th>File</th>
+                                                                    <th>Aksi</th></tr>
+                                                                </thead>
+                                                                <tfoot>
+                                                                    <tbody> <!-- untuk menampung baris data pada table -->
+                                                                    <tr>
+                                                                    <td>1</td>
+                                                                    <td>SR-121</td>
+                                                                    <td>1 Oktober 2021</td>
+                                                                    <td>Politeknik Negeri Jember</td>
+                                                                    <td>Perizinan lokasi PKL</td>
+                                                                    <td>PKL.pdf</td>
+                                                                    <td>
+                                                                    <a href="lihat-suratkeluar.html" class="fa fa-eye"></a>
+                                                                    </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+
+                                                                <!-- untuk mengakses file function tambah pada controller Mahasiswa-->
                                                             </div>
+                                                        </div>
+                                                    </div>
 
                                                         </div>
                                                     </div>
