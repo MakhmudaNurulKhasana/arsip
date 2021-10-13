@@ -136,3 +136,40 @@
         "use strict";
         $.MainApp.init();
     }(window.jQuery);
+
+    
+    function klik(){
+    const icon = document.getElementById("icon");
+    if(icon.style.color == "black"){
+        icon.style.color = "limegreen";
+    }else{
+        icon.style.color = "black";
+    }
+}
+
+function klik_abaikan(){
+    const abaikan = document.getElementById("abaikan");
+    if(abaikan.style.color == "black"){
+        abaikan.style.color = "red";
+    }else{
+        abaikan.style.color = "black";
+    }
+}
+
+function klik2(){
+    const icon2 = document.getElementById("icon2");
+    if(icon2.style.color == "black"){
+        icon2.style.color = "limegreen";
+    }else{
+        icon2.style.color = "black";
+    }
+}
+
+function klik_abaikan2(){
+    const abaikan2 = document.getElementById("abaikan2");
+    if(abaikan2.style.color == "black"){
+        abaikan2.style.color = "red";
+    }else{
+        abaikan2.style.color = "black";
+    }
+}
