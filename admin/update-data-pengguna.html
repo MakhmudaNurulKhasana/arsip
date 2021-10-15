@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <title>Arsipin - Surat Keluar</title>
+    <title>Arsipin - Edit Data Pengguna</title>
     <meta content="Admin Dashboard" name="description" />
     <meta content="themesdesign" name="author" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -61,8 +61,8 @@
                             class="mdi mdi-file-document-box"></i><span> Data Arsip </span><span
                             class="float-right"><i class="mdi mdi-chevron-right"></i></span></a>
                             <ul class="list-unstyled">
-                                <li><a href="jenis-arsip.html">Jenis Arsip</a></li>
-                                <li><a href="data-arsip.html">Data Arsip</a></li>
+                                <li><a href="jenis-arsip.html">Jenis Dokumen</a></li>
+                                <li><a href="data-arsip.html">Data Dokumen</a></li>
                             </ul>
                         </li>
 
@@ -73,8 +73,39 @@
                                 <ul class="list-unstyled">
                                     <li><a href="surat-masuk.html">Surat Masuk</a></li>
                                     <li><a href="surat-keluar.html">Surat Keluar</a></li>
+                                    <!-- <li><a href="disposisi.html">Disposisi</a></li> -->
                                 </ul>
                             </li>
+
+                            <li class="has_sub">
+                            </li>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="divisi-divisi.html" class="waves-effect waves-light"><i class="mdi mdi-division-box"></i><span> Data Divisi </span></a>
+                    </li>
+
+                    <li class="has_sub">
+                    </li>
+                </a>
+            </li>
+
+            <li>
+                <a href="pengguna-pengguna.html" class="waves-effect waves-light"><i class="mdi mdi-folder-account"></i><span> Data Pengguna </span></a>
+            </li>
+
+            <li class="has_sub">
+            </li>
+        </a>
+    </li>
+
+                        <!-- <li>
+                                <a href="laporan.html" class="waves-effect waves-light"><i
+                                    class="mdi mdi-library-books"></i><span> Laporan Disposisi</span></a>
+                                </li> -->
+
+                            </ul>
                         </div>
                         <div class="clearfix"></div>
                     </div> <!-- end sidebarinner -->
@@ -224,7 +255,7 @@
                                     <div class="row">
                                         <div class="col-sm-12">
                                             <div class="page-title-box">
-                                                <h4 class="page-title">Surat Keluar</h4>
+                                                <h4 class="page-title">Edit Data Pengguna</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -232,93 +263,105 @@
                                         <div class="col-12">
                                             <div class="card m-b-30">
                                                 <div class="card-body">
-                                                    <div class="float-left">
-                                                        <p>
-                                                            <a href=form-add-surat-keluar.html>
-                                                                <button type="button" class="btn btn-info btn-lg">Tambah Data</button></p>
-                                                            </a>
+                                                    <div class="form-group row">
+                                                        <label for="example-text-input" class="col-sm-2 col-form-label">Nama</label>
+                                                        <div class="col-sm-5">
+                                                            <input class="form-control" type="text" value="Arnetta" id="example-text-input">
                                                         </div>
-                                                        <div class="table-responsive">
-                                                            <table class="table" id="my-table">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>No</th>
-                                                                        <th>No. Surat</th>
-                                                                        <th>Tanggal Surat</th>
-                                                                        <th>Tujuan Surat</th>
-                                                                        <th>Perihal</th>
-                                                                        <th>File</th>
-                                                                        <th>Aksi</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>1</td>
-                                                                        <td>SR-131</td>
-                                                                        <td>5 Oktober 2021</td>
-                                                                        <td>Politeknik Negeri Jember</td>
-                                                                        <td>Penerimaan mahasiswa PKL</td>
-                                                                        <td><a href="https://drive.google.com/file/d/1XCtlTwCOrE39jRuhD9efdgeohNfoykEx/view?usp=sharing">PKL-Polije.pdf</a></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>2</td>
-                                                                        <td>SR-132</td>
-                                                                        <td>6 Oktober 2021</td>
-                                                                        <td>Tokopedia</td>
-                                                                        <td>Meeting</td>
-                                                                        <td><a href="https://drive.google.com/file/d/1XCtlTwCOrE39jRuhD9efdgeohNfoykEx/view?usp=sharing">meet-tokopedia.pdf</a></td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="example-date-input" class="col-sm-2 col-form-label">Email</label>
+                                                        <div class="col-sm-5">
+                                                            <input class="form-control" type="text" value="arnet67@gmail.com" id="example-date-input">
                                                         </div>
-
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="example-date-input" class="col-sm-2 col-form-label">Role</label>
+                                                        <div class="col-sm-5">
+                                                            <select class="form-control" name="Role">
+                                                            <option value=""hidden disabled selected>Marketing</option>
+                                                            <option value="marketing">Marketing</option>
+                                                            <option value="hrd">HRD</option>
+                                                        </select>
                                                     </div>
                                                 </div>
-                                            </div> <!-- end col -->
-                                        </div> <!-- end row -->
+                                                <div class="form-group row">
+                                                    <label for="example-text-input" class="col-sm-2 col-form-label">Username</label>
+                                                    <div class="col-sm-5">
+                                                        <input class="form-control" type="text" value="Arneta" id="example-text-input">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="example-text-input" class="col-sm-2 col-form-label">Password</label>
+                                                    <div class="col-sm-5">
+                                                        <input class="form-control" type="text" value="arnet26" id="example-text-input">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col-md-10 offset-md-2">
+                                                        <div class="input-group mt-2">
+                                                            <div class="custom">
+                                                                <div class="input-group-append">
 
+                                                                    <a href=pengguna-pengguna.html>
+                                                                        <button class="btn btn-primary" type="button">Simpan</button></a>
+                                                                    </div>
+                                                                    
+                                                                </div> &nbsp &nbsp
+                                                                <div class="input-group-append">
+
+                                                                    <a href=pengguna-pengguna.html>
+                                                                        <button class="btn btn-danger" type="button">Batal</button></a>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div> <!-- end col -->
+                                                </div> <!-- end row -->
+
+
+                                            </div><!-- container -->
+
+                                        </div> <!-- Page content Wrapper -->
 
                                     </div><!-- container -->
 
                                 </div> <!-- Page content Wrapper -->
 
-                            </div><!-- container -->
+                            </div> <!-- content -->
 
-                        </div> <!-- Page content Wrapper -->
+                            <footer class="footer">
+                                © 2018 - 2020 Dashor by Themesdesign.
+                            </footer>
 
-                    </div> <!-- content -->
+                        </div>
+                        <!-- End Right content here -->
 
-                    <footer class="footer">
-                        © 2018 - 2020 Dashor by Themesdesign.
-                    </footer>
-
-                </div>
-                <!-- End Right content here -->
-
-            </div>
-            <!-- END wrapper -->
+                    </div>
+                    <!-- END wrapper -->
 
 
-            <!-- jQuery  -->
-            <script src="assets/js/jquery.min.js"></script>
-            <script src="assets/js/bootstrap.bundle.min.js"></script>
-            <script src="assets/js/modernizr.min.js"></script>
-            <script src="assets/js/detect.js"></script>
-            <script src="assets/js/fastclick.js"></script>
-            <script src="assets/js/jquery.slimscroll.js"></script>
-            <script src="assets/js/jquery.blockUI.js"></script>
-            <script src="assets/js/waves.js"></script>
-            <script src="assets/js/jquery.nicescroll.js"></script>
-            <script src="assets/js/jquery.scrollTo.min.js"></script>
+                    <!-- jQuery  -->
+                    <script src="assets/js/jquery.min.js"></script>
+                    <script src="assets/js/bootstrap.bundle.min.js"></script>
+                    <script src="assets/js/modernizr.min.js"></script>
+                    <script src="assets/js/detect.js"></script>
+                    <script src="assets/js/fastclick.js"></script>
+                    <script src="assets/js/jquery.slimscroll.js"></script>
+                    <script src="assets/js/jquery.blockUI.js"></script>
+                    <script src="assets/js/waves.js"></script>
+                    <script src="assets/js/jquery.nicescroll.js"></script>
+                    <script src="assets/js/jquery.scrollTo.min.js"></script>
 
-            <script src="assets/plugins/tiny-editable/mindmup-editabletable.js"></script>
-            <script src="assets/plugins/tiny-editable/numeric-input-example.js"></script>
-            <script src="assets/plugins/tabledit/jquery.tabledit.js"></script>
-            <script src="assets/pages/edit-table.js"></script>
+                    <script src="assets/plugins/tiny-editable/mindmup-editabletable.js"></script>
+                    <script src="assets/plugins/tiny-editable/numeric-input-example.js"></script>
+                    <script src="assets/plugins/tabledit/jquery.tabledit.js"></script>
+                    <script src="assets/pages/edit-table.js"></script>
 
-            <!-- App js -->
-            <script src="assets/js/app.js"></script>
+                    <!-- App js -->
+                    <script src="assets/js/app.js"></script>
 
-        </body>
-    </script>
-    </html>
+                </body>
+
+                </html>

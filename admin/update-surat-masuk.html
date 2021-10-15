@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <title>Arsipin - Surat Masuk</title>
+    <title>Arsipin - Edit Data Surat Masuk</title>
     <meta content="Admin Dashboard" name="description" />
     <meta content="themesdesign" name="author" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -46,35 +46,59 @@
                         <li class="menu-title">Overview</li>
 
                         <li class="has_sub">
-                           </li>
+                                 </li>
                             </a>
-                        </li>
-
                         <li>
                                 <a href="dashboard.html" class="waves-effect waves-light"><i
-                                    class="mdi mdi-view-dashboard"></i><span> Dashboard </span></a>
+                                    class="mdi mdi-view-dashboard"></i><span> Dashboard </span>
+                            </a>
                             </li>
 
 
                         <li class="has_sub">
                             <a href="javascript:void(0);" class="waves-effect waves-light"><i
-                                    class="mdi mdi-file-document-box"></i><span> Data Arsip </span><span
-                                    class="float-right"><i class="mdi mdi-chevron-right"></i></span></a>
-                            <ul class="list-unstyled">
-                                <li><a href="jenis-arsip.html">Jenis Arsip</a></li>
-                                <li><a href="data-arsip.html">Data Arsip</a></li>
-                            </ul>
-                        </li>
+                                class="mdi mdi-file-document-box"></i><span> Data Arsip </span><span
+                                class="float-right"><i class="mdi mdi-chevron-right"></i></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="jenis-arsip.html">Jenis Arsip</a></li>
+                                    <li><a href="data-arsip.html">Data Arsip</a></li>
+                                </ul>
+                            </li>
 
-                        <li class="has_sub">
-                            <a href="javascript:void(0);" class="waves-effect"><i
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i
                                     class="mdi mdi-file-document"></i><span> Data Dokumen </span> <span
                                     class="float-right"><i class="mdi mdi-chevron-right"></i></span></a>
-                            <ul class="list-unstyled">
-                                <li><a href="surat-masuk.html">Surat Masuk</a></li>
-                                <!-- <li><a href="surat-keluar.html">Surat Keluar</a></li> -->
-                            </ul>
+                                    <ul class="list-unstyled">
+                                        <li><a href="surat-masuk.html">Surat Masuk</a></li>
+                                        <li><a href="surat-keluar.html">Surat Keluar</a></li>
+                                        <!-- <li><a href="disposisi.html">Disposisi</a></li> -->
+                                    </ul>
+                                </li>
+
+                                <li class="has_sub">
+                                    <a href="divisi-divisi.html" class="waves-effect waves-light"><i
+                                        class="mdi mdi-division-box"></i><span> Data Divisi </span>
+                                    </a>
+                                </li>
+
+                                <li class="has_sub">
+                                    <a href="pengguna-pengguna.html" class="waves-effect waves-light"><i
+                                        class="mdi mdi-folder-account"></i><span> Data Pengguna </span>
+                                    </a>
+                                </li>
+
+                                <li class="has_sub">
+                           </li>
+                            </a>
                         </li>
+
+                        <!-- <li>
+                                <a href="laporan.html" class="waves-effect waves-light"><i
+                                    class="mdi mdi-library-books"></i><span> Laporan Disposisi</span></a>
+                            </li> -->
+
+                            </ul>
                         </div>
                         <div class="clearfix"></div>
                     </div> <!-- end sidebarinner -->
@@ -189,7 +213,9 @@
                                             </div>
                                             <a class="dropdown-item" href="profile.html"><i class="mdi mdi-account-circle "></i>
                                             Profile</a>
-                                            
+                                            <a class="dropdown-item" href="#"><span
+                                                class="badge badge-primary float-right">3</span><i
+                                                class="mdi mdi-settings "></i> Settings</a>
                                                 <a class="dropdown-item" href="#"><i class="mdi mdi-lock-open-outline"></i> Lock
                                                 screen</a>
                                                 <div class="dropdown-divider"></div>
@@ -234,52 +260,87 @@
                                                     <div class="card-body">
                                                         <div class="form-group row">
                                                             <label for="example-number-input" class="col-sm-2 col-form-label">No. Surat</label>
-                                                            <div class="col-sm-10">
+                                                            <div class="col-sm-5">
                                                                 <input class="form-control" type="number" value="121" id="example-number-input">
                                                             </div>
                                                         </div>
                                                         <div class="form-group row">
                                                             <label for="example-date-input" class="col-sm-2 col-form-label">Tanggal Surat</label>
-                                                            <div class="col-sm-10">
+                                                            <div class="col-sm-5">
                                                                 <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
                                                             </div>
                                                         </div>
                                                         <div class="form-group row">
                                                             <label for="example-date-input" class="col-sm-2 col-form-label">Tanggal Terima</label>
-                                                            <div class="col-sm-10">
+                                                            <div class="col-sm-5">
                                                                 <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
                                                             </div>
                                                         </div>
                                                         <div class="form-group row">
                                                             <label for="example-text-input" class="col-sm-2 col-form-label">Asal Surat</label>
-                                                            <div class="col-sm-10">
+                                                            <div class="col-sm-5">
                                                                 <input class="form-control" type="text" value="Politeknik Negeri Jember" id="example-text-input">
                                                             </div>
                                                         </div>
                                                         <div class="form-group row">
+                                                        <label for="example-date-input" class="col-sm-2 col-form-label">Ditujukan Kepada</label>
+                                                        <div class="col-sm-5">
+                                                            <select class="form-control" name="Role">
+                                                            <option value=""hidden disabled selected>Divisi HRD</option>
+                                                            <option value="marketing">Marketing</option>
+                                                            <option value="hrd">HRD</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                        <div class="form-group row">
                                                             <label for="example-text-input" class="col-sm-2 col-form-label">Perihal</label>
-                                                            <div class="col-sm-10">
+                                                            <div class="col-sm-5">
                                                                 <input class="form-control" type="text" value="PKL" id="example-text-input">
                                                             </div>
                                                         </div>
                                                         <div class="form-group row">
-                                                            <label class="col-sm-2 col-form-label" for="example-input1-group2">File</label>
-                                                            <div class="col-sm-10">
-                                                                <div class="input-group">
-                                                                    <div class="input-group-prepend">
-                                                                        <div class="col-md-10 offset-md-2">
-                                                                            <div class="input-group mt-2">
-                                                                                <div class="custom-file">
-                                                                                    <input type="file" class="custom-file-input" id="inputGroupFile04">
-                                                                                    <label class="custom-file-label" for="inputGroupFile04">Choose file</label>
-                                                                                </div>
-                                                                                <div class="input-group-append">
-                                                                                    <button class="btn btn-primary" type="button">Upload</button>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
+                                                <label for="example-date-input" class="col-sm-2 col-form-label">File/jpg</label>
+                                                <div class="col-sm-3">
+                                                    <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                    <div class="custom-file">
+                                                    <input type="file" class="custom-file-input" id="inputGroupFile04">
+                                                    <label class="custom-file-label" for="inputGroupFile04">PKL.pdf</label>
+                                                </div> 
+                                                <div class="input-group-append">
+                                                <button class="btn btn-primary" type="button">Upload</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            
+                                                <div class="col-sm-5">
+                                                    
+                                                </div>
+                                                <div class="col-sm-5">
+                                            </div>
+                                                                <div class="col-md-10 offset-md-2">
+                                                            <div class="input-group mt-2">
+                                                                <div class="custom">
+                                                                <div class="input-group-append">
+
+                                                                <a href=surat-masuk.html>
+                                                                    <button class="btn btn-primary btn-sm" type="button">Simpan</button></a>
                                                                 </div>
+                                                                    
+                                                                </div> &nbsp &nbsp
+                                                                <div class="input-group-append">
+
+                                                                <a href=surat-masuk.html>
+                                                                    <button class="btn btn-danger btn-sm" type="button">Batal</button></a>
+                                                                </div>
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
                                                             </div>
 
@@ -289,24 +350,6 @@
 
                                                 </div><!-- container -->
 
-                                                <div class="col-md-10 offset-md-2">
-                                                    <div class="input-group mt-2">
-                                                        <div class="custom">
-                                                            <div class="input-group-append">
-
-                                                                <a href=surat-masuk.html>
-                                                                    <button class="btn btn-primary" type="button">Simpan</button></a>
-                                                                </div>
-
-                                                            </div> &nbsp &nbsp
-                                                            <div class="input-group-append">
-
-                                                                <a href=surat-masuk.html>
-                                                                    <button class="btn btn-danger" type="button">Batal</button></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div> <!-- Page content Wrapper -->
 
                                                 </div><!-- container -->
 
