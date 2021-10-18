@@ -81,28 +81,27 @@
 
         //create line chart
         var $data  = [
-            { y: '2009', a: 100, b: 90 },
-            { y: '2010', a: 75,  b: 65 },
-            { y: '2011', a: 50,  b: 40 },
-            { y: '2012', a: 75,  b: 65 },
-            { y: '2013', a: 50,  b: 40 },
-            { y: '2014', a: 75,  b: 65 },
-            { y: '2015', a: 100, b: 90 }
+            {y: '2015', a: 0, b: 0, c:0},
+            {y: '2016', a: 150, b: 45, c:15},
+            {y: '2017', a: 60, b: 150, c:195},
+            {y: '2018', a: 180, b: 36, c:21},
+            {y: '2019', a: 90, b: 60, c:360},
+            {y: '2020', a: 75, b: 240, c:120},
+            {y: '2021', a: 30, b: 30, c:30}
           ];
-        this.createLineChart('morris-line-example', $data, 'y', ['a', 'b'], ['Series A', 'Series B'], ['#365d6e', '#ddd']);
+        this.createLineChart('morris-line-example', $data, 'y', ['a', 'b'], ['Surat Masuk', 'Surat Keluar'], ['#365d6e', '#ddd']);
 
         //creating area chart
         var $areaData = [
-            {y: '2009', a: 10, b: 20},
-            {y: '2010', a: 75, b: 65},
-            {y: '2011', a: 50, b: 40},
-            {y: '2012', a: 75, b: 65},
-            {y: '2013', a: 50, b: 40},
-            {y: '2014', a: 75, b: 65},
-            {y: '2015', a: 90, b: 60},
-            {y: '2016', a: 90, b: 75}
+            { y: '2020', a: 0, b: 0},
+            { y: '2021', a: 50,  b: 30 },
+            { y: '2022', a: 50,  b: 30 },
+            { y: '2023', a: 120,  b: 100},
+            { y: '2024', a: 60,  b: 40 },
+            { y: '2025', a: 140,  b: 120},
+            { y: '2026', a: 180, b: 200 }
         ];
-        this.createAreaChart('morris-area-example', 0, 0, $areaData, 'y', ['a', 'b'], ['Series A', 'Series B'], ['#365d6e', '#59ceb5']);
+        this.createAreaChart('morris-area-example', 0, 0, $areaData, 'y', ['a', 'b'], ['Surat Masuk', 'Surat Keluar'], ['#ec536c', '#59ceb5']);
 
         //creating bar chart
         var $barData = [
@@ -115,7 +114,7 @@
             {y: '2015', a: 100, b: 90},
             {y: '2016', a: 90, b: 75}
         ];
-        this.createBarChart('morris-bar-example', $barData, 'y', ['a', 'b'], ['Series A', 'Series B'], ['#365d6e', '#59ceb5']);
+        this.createBarChart('morris-bar-example', $barData, 'y', ['a', 'b'], ['Surat Masuk', 'Surat Keluar'], ['#365d6e', '#59ceb5']);
 
         //creating donut chart
         var $donutData = [
