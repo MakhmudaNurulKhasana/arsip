@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <title>Arsipin - Tambah Surat Keluar</title>
+    <title>Arsipin - Surat Masuk</title>
     <meta content="Admin Dashboard" name="description" />
     <meta content="themesdesign" name="author" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -47,48 +46,35 @@
                         <li class="menu-title">Overview</li>
 
                         <li class="has_sub">
-                           </li>
-                            </a>
                         </li>
+                    </a>
+                </li>
 
-                        <li>
-                                <a href="dashboard.html" class="waves-effect waves-light"><i
-                                    class="mdi mdi-view-dashboard"></i><span> Dashboard </span></a>
-                            </li>
+                <li>
+                    <a href="dashboard.html" class="waves-effect waves-light"><i
+                        class="mdi mdi-view-dashboard"></i><span> Dashboard </span></a>
+                    </li>
 
 
-                        <li class="has_sub">
-                            <a href="javascript:void(0);" class="waves-effect waves-light"><i
-                                    class="mdi mdi-file-document-box"></i><span> Data Dokumen </span><span
-                                    class="float-right"><i class="mdi mdi-chevron-right"></i></span></a>
+                    <li class="has_sub">
+                        <a href="javascript:void(0);" class="waves-effect waves-light"><i
+                            class="mdi mdi-file-document-box"></i><span> Data Arsip </span><span
+                            class="float-right"><i class="mdi mdi-chevron-right"></i></span></a>
                             <ul class="list-unstyled">
-                                <li><a href="jenis-dokumen.html">Jenis Data</a></li>
-                                <li><a href="data-dokumen.html">Data Dokumen</a></li>
+                                <li><a href="jenis-arsip.html">Jenis Arsip</a></li>
+                                <li><a href="data-arsip.html">Data Arsip</a></li>
                             </ul>
                         </li>
 
                         <li class="has_sub">
                             <a href="javascript:void(0);" class="waves-effect"><i
-                                    class="mdi mdi-file-document"></i><span> Data Arsip </span> <span
-                                    class="float-right"><i class="mdi mdi-chevron-right"></i></span></a>
-                            <ul class="list-unstyled">
-                                <li><a href="surat-masuk.html">Surat Masuk</a></li>
-                                <li><a href="surat-keluar.html">Surat Keluar</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="has_sub">
-                           </li>
-                            </a>
-                        </li>
-
-                        <li>
-                                <a href="laporan.html" class="waves-effect waves-light"><i
-                                    class="mdi mdi-library-books"></i><span> Laporan </span></a>
+                                class="mdi mdi-file-document"></i><span> Data Dokumen </span> <span
+                                class="float-right"><i class="mdi mdi-chevron-right"></i></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="surat-masuk.html">Surat Masuk</a></li>
+                                    <!-- <li><a href="surat-keluar.html">Surat Keluar</a></li> -->
+                                </ul>
                             </li>
-
-
-                            </ul>
                         </div>
                         <div class="clearfix"></div>
                     </div> <!-- end sidebarinner -->
@@ -203,161 +189,171 @@
                                             </div>
                                             <a class="dropdown-item" href="profile.html"><i class="mdi mdi-account-circle "></i>
                                             Profile</a>
-                                            
-                                                <a class="dropdown-item" href="#"><i class="mdi mdi-lock-open-outline"></i> Lock
-                                                screen</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a class="dropdown-item text-danger" href="#"><i
-                                                    class="mdi mdi-power text-danger"></i> Logout</a>
-                                                </div>
-                                            </li>
-                                        </ul>
 
-                                        <ul class="list-inline menu-left mb-0">
-                                            <li class="float-left">
-                                                <button class="button-menu-mobile open-left waves-light waves-effect">
-                                                    <i class="mdi mdi-menu"></i>
-                                                </button>
-                                            </li>
-                                            <li class="hide-phone app-search">
-                                                <form role="search" class="">
-                                                    <input type="text" placeholder="Search..." class="form-control">
-                                                    <a href=""><i class="fa fa-search"></i></a>
-                                                </form>
-                                            </li>
-                                        </ul>
-                                        <div class="clearfix"></div>
-                                    </nav>
-                                </div>
-                                <!-- Top Bar End -->
-                                <!-- end page title end breadcrumb -->
-                                <div class="page-content-wrapper">
+                                            <a class="dropdown-item" href="#"><i class="mdi mdi-lock-open-outline"></i> Lock
+                                            screen</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item text-danger" href="#"><i
+                                                class="mdi mdi-power text-danger"></i> Logout</a>
+                                            </div>
+                                        </li>
+                                    </ul>
 
-                                    <div class="container-fluid">
-                                        <!-- end page title end breadcrumb -->
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <div class="page-title-box">
-                                                    <h4 class="page-title">Tambah Surat Keluar</h4>
-                                                </div>
+                                    <ul class="list-inline menu-left mb-0">
+                                        <li class="float-left">
+                                            <button class="button-menu-mobile open-left waves-light waves-effect">
+                                                <i class="mdi mdi-menu"></i>
+                                            </button>
+                                        </li>
+                                        <li class="hide-phone app-search">
+                                            <form role="search" class="">
+                                                <input type="text" placeholder="Search..." class="form-control">
+                                                <a href=""><i class="fa fa-search"></i></a>
+                                            </form>
+                                        </li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </nav>
+                            </div>
+                            <!-- Top Bar End -->
+                            <!-- end page title end breadcrumb -->
+                            <div class="page-content-wrapper">
+
+                                <div class="container-fluid">
+                                    <!-- end page title end breadcrumb -->
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="page-title-box">
+                                                <h4 class="page-title">Detail Surat Masuk</h4>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <div class="card m-b-30">
-                                                    <div class="card-body">
-                                                        <div class="form-group row">
-                                                            <label for="example-number-input" class="col-sm-2 col-form-label">No. Surat</label>
-                                                            <div class="col-sm-5">
-                                                                <input class="form-control" type="number" value="121" id="example-number-input">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <div class="card m-b-30">
+                                                <div class="card-body">
+                                                    <div class="form-group row">
+                                                        <label for="example-number-input"class="col-sm-4
+                                                        col-form-label">No. Surat</label>
+                                                        <div class="col-sm-8">
+                                                            <label for="example-number-input"class="col-sm-6
+                                                            col-form-label">SR-121</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="example-number-input"class="col-sm-4
+                                                        col-form-label">Tanggal Surat</label>
+                                                        <div class="col-sm-8">
+                                                            <label for="example-number-input"class="col-sm-7
+                                                            col-form-label">01 Oktober 2021</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="example-number-input"class="col-sm-4
+                                                        col-form-label">Tanggal Terima</label>
+                                                        <div class="col-sm-8">
+                                                            <label for="example-number-input"class="col-sm-7
+                                                            col-form-label">04 Oktober 2021</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="example-number-input"class="col-sm-4
+                                                        col-form-label">Asal Surat</label>
+                                                        <div class="col-sm-8">
+                                                            <label for="example-number-input"class="col-sm-8
+                                                            col-form-label">Politeknik Negeri Jember</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="example-number-input"class="col-sm-4
+                                                        col-form-label">Ditujukan Kepada</label>
+                                                        <div class="col-sm-8">
+                                                            <label for="example-number-input"class="col-sm-7
+                                                            col-form-label">Divisi HRD</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="example-number-input"class="col-sm-4
+                                                        col-form-label">Perihal</label>
+                                                        <div class="col-sm-8">
+                                                            <label for="example-number-input"class="col-sm-7
+                                                            col-form-label">Perizinan lokasi PKL</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-4
+                                                        col-form-label"for="example-input1-group2">File</label>
+                                                        <div class="col-sm-8">
+                                                            <iframe src="contoh.pdf" width="500" height="300"></iframe>
                                                             </div>
                                                         </div>
                                                         <div class="form-group row">
-                                                            <label for="example-date-input" class="col-sm-2 col-form-label">Tanggal Surat</label>
                                                             <div class="col-sm-5">
-                                                                <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
                                                             </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <label for="example-text-input" class="col-sm-2 col-form-label">Tujuan Surat</label>
                                                             <div class="col-sm-5">
-                                                                <input class="form-control" type="text" value="Politeknik Negeri Jember" id="example-text-input">
                                                             </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <label for="example-text-input" class="col-sm-2 col-form-label">Perihal</label>
-                                                            <div class="col-sm-5">
-                                                                <input class="form-control" type="text" value="PKL" id="example-text-input">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                <label for="example-date-input" class="col-sm-2 col-form-label">File/jpg</label>
-                                                <div class="col-sm-3">
-                                                    <div class="input-group">
-                                                    <div class="input-group-prepend">
-                                                    <div class="custom-file">
-                                                    <input type="file" class="custom-file-input" id="inputGroupFile04">
-                                                    <label class="custom-file-label" for="inputGroupFile04">Choose file</label>
-                                                </div> 
-                                                <div class="input-group-append">
-                                                <button class="btn btn-primary" type="button">Upload</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            
-                                                <div class="col-sm-5">
-                                                    
-                                                </div>
-                                                <div class="col-sm-5">
-                                            </div>
-                                                                <div class="col-md-10 offset-md-2">
-                                                            <div class="input-group mt-2">
-                                                                <div class="custom">
-                                                                <div class="input-group-append">
-
-                                                                <a href=surat-keluar.html>
-                                                                    <button class="btn btn-primary" type="button">Simpan</button></a>
+                                                            <div class="col-md-10 offset-md-2">
+                                                                <div class="input-group mt-2">
+                                                                    <div class="custom">
+                                                                        <div class="input-group append">
+                                                                            <a href="surat-masuk.html">
+                                                                            <button class="btn btn-danger btn-sm" type="button">Kembali</button>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
-                                                                    
-                                                                </div> &nbsp &nbsp
-                                                                <div class="input-group-append">
-
-                                                                <a href=surat-keluar.html>
-                                                                    <button class="btn btn-danger" type="button">Batal</button></a>
-                                                                </div>
-                                                            </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                        </div> <!-- end col -->
-                                                    </div> <!-- end row -->
+                                                </div> <!-- end col -->
+                                            </div> <!-- end row -->
 
-
-                                                </div><!-- container -->
-
-                                            </div> <!-- Page content Wrapper -->
 
                                         </div><!-- container -->
 
                                     </div> <!-- Page content Wrapper -->
 
-                                </div> <!-- content -->
+                                </div><!-- container -->
 
-                                <footer class="footer">
-                                    © 2018 - 2020 Dashor by Themesdesign.
-                                </footer>
+                            </div> <!-- Page content Wrapper -->
 
-                            </div>
-                            <!-- End Right content here -->
+                        </div> <!-- content -->
+                        <footer class="footer">
+                            © 2018 - 2020 Dashor by Themesdesign.
+                        </footer>
 
-                        </div>
-                        <!-- END wrapper -->
+                    </div>
+                    <!-- End Right content here -->
+
+                </div>
+                <!-- END wrapper -->
 
 
-                        <!-- jQuery  -->
-                        <script src="assets/js/jquery.min.js"></script>
-                        <script src="assets/js/bootstrap.bundle.min.js"></script>
-                        <script src="assets/js/modernizr.min.js"></script>
-                        <script src="assets/js/detect.js"></script>
-                        <script src="assets/js/fastclick.js"></script>
-                        <script src="assets/js/jquery.slimscroll.js"></script>
-                        <script src="assets/js/jquery.blockUI.js"></script>
-                        <script src="assets/js/waves.js"></script>
-                        <script src="assets/js/jquery.nicescroll.js"></script>
-                        <script src="assets/js/jquery.scrollTo.min.js"></script>
+                <!-- jQuery  -->
+                <script src="assets/js/jquery.min.js"></script>
+                <script src="assets/js/bootstrap.bundle.min.js"></script>
+                <script src="assets/js/modernizr.min.js"></script>
+                <script src="assets/js/detect.js"></script>
+                <script src="assets/js/fastclick.js"></script>
+                <script src="assets/js/jquery.slimscroll.js"></script>
+                <script src="assets/js/jquery.blockUI.js"></script>
+                <script src="assets/js/waves.js"></script>
+                <script src="assets/js/jquery.nicescroll.js"></script>
+                <script src="assets/js/jquery.scrollTo.min.js"></script>
 
-                        <script src="assets/plugins/tiny-editable/mindmup-editabletable.js"></script>
-                        <script src="assets/plugins/tiny-editable/numeric-input-example.js"></script>
-                        <script src="assets/plugins/tabledit/jquery.tabledit.js"></script>
-                        <script src="assets/pages/edit-table.js"></script>
+                <script src="assets/plugins/tiny-editable/mindmup-editabletable.js"></script>
+                <script src="assets/plugins/tiny-editable/numeric-input-example.js"></script>
+                <script src="assets/plugins/tabledit/jquery.tabledit.js"></script>
+                <script src="assets/pages/edit-table.js"></script>
 
-                        <!-- App js -->
-                        <script src="assets/js/app.js"></script>
+                <!-- App js -->
+                <script src="assets/js/app.js"></script>
 
-                    </body>
-
-                    </html>
+            </body>
+<!--<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script>
+    $('.checked-all').on('change', function(e){
+    e.preventDefault()
+    $('input[name=pilih]').prop('checked', this.checked)
+})-->
+</script>
+</html>
