@@ -528,16 +528,6 @@ label {
   border-radius: 50%;
 }
 
-/*.card{
-background:url(https://images.pexels.com/photos/4792288/pexels-photo-4792288.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260) no-repeat center;
-px 50px 0 rgba(0,0,0,.19);
-}box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17
-
-.card-body {
-background:rgba(40,57,101,.9);
-position: absolute;
-}*/
-
 .chat {
   margin: 0;
   padding: 0;
@@ -1275,7 +1265,7 @@ position: absolute;
 }
 
 .m-b-30 {
-  margin-bottom: 30px;
+  margin-bottom: 80px;
 }
 
 .w-xs {
@@ -4552,5 +4542,21 @@ File: Responsive
     -webkit-transform: translateY(-2000px);
             transform: translateY(-2000px);
   }
+}
+
+#icon{
+  color: black;
+}
+
+#abaikan{
+  color: black;
+}
+
+#icon2{
+  color: black;
+}
+
+#abaikan2{
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */

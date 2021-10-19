@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <title>Arsipin - Tambah Jenis Dokumen</title>
+    <title>Arsipin - Tambah Data MOU</title>
     <meta content="Admin Dashboard" name="description" />
     <meta content="themesdesign" name="author" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -46,12 +46,13 @@
                         <li class="menu-title">Overview</li>
 
                         <li class="has_sub">
-                                 </li>
+                           </li>
                             </a>
+                        </li>
+
                         <li>
                                 <a href="dashboard.html" class="waves-effect waves-light"><i
-                                    class="mdi mdi-view-dashboard"></i><span> Dashboard </span>
-                            </a>
+                                    class="mdi mdi-view-dashboard"></i><span> Dashboard </span></a>
                             </li>
 
 
@@ -72,31 +73,14 @@
                             <ul class="list-unstyled">
                                 <li><a href="surat-masuk.html">Surat Masuk</a></li>
                                 <li><a href="surat-keluar.html">Surat Keluar</a></li>
-                                <li><a href="disposisi.html">Disposisi</a></li>
+                                <!-- <li><a href="disposisi.html">Disposisi</a></li> -->
                             </ul>
-                        </li>
-
-                        <li class="has_sub">
-                            <a href="divisi-divisi.html" class="waves-effect waves-light"><i
-                                    class="mdi mdi-division-box"></i><span> Data Divisi </span>
-                            </a>
-                        </li>
-
-                        <li class="has_sub">
-                            <a href="pengguna-pengguna.html" class="waves-effect waves-light"><i
-                                    class="mdi mdi-folder-account"></i><span> Data Pengguna </span>
-                            </a>
                         </li>
 
                         <li class="has_sub">
                            </li>
                             </a>
                         </li>
-
-                        <!-- <li>
-                                <a href="laporan.html" class="waves-effect waves-light"><i
-                                    class="mdi mdi-library-books"></i><span> Laporan Disposisi</span></a>
-                            </li> -->
 
                     </ul>
                 </div>
@@ -213,9 +197,7 @@
                                     </div>
                                     <a class="dropdown-item" href="profile.html"><i class="mdi mdi-account-circle "></i>
                                         Profile</a>
-                                    <a class="dropdown-item" href="#"><span
-                                            class="badge badge-primary float-right">3</span><i
-                                            class="mdi mdi-settings "></i> Settings</a>
+                                    
                                     <a class="dropdown-item" href="#"><i class="mdi mdi-lock-open-outline"></i> Lock
                                         screen</a>
                                     <div class="dropdown-divider"></div>
@@ -250,46 +232,88 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="page-title-box">
-                                    <h4 class="page-title">Add Jenis Arsip</h4>
+                                    <h4 class="page-title">Edit Data MOU</h4>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                                <div class="col-12">
-                                    <div class="card m-b-30">
-                                        <div class="card-body">
-                                            <div class="form-group row">
-                                                <label for="example-text-input" class="col-sm-2 col-form-label">Nama/Jenis Arsip</label>
-                                                <div class="col-sm-5">
-                                                    <input class="form-control" type="text" value="" id="example-text-input">
-                                                </div>
+                            <div class="col-12">
+                                <div class="card m-b-30">
+                                    <div class="card-body">
+                                        <div class="form-group row">
+                                            <label for="example-date-input" class="col-sm-2 col-form-label">No</label>
+                                            <div class="col-sm-5">
+                                                <input class="form-control" type="text" value="1" id="example-date-input">
                                             </div>
-                                            <div class="form-group row">
-                                                                <div class="col-md-10 offset-md-2">
-                                                            <div class="input-group mt-2">
-                                                                <div class="custom">
-                                                                <div class="input-group-append">
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="example-date-input" class="col-sm-2 col-form-label">Nama Arsip</label>
+                                            <div class="col-sm-5">
+                                                <input class="form-control" type="text" value="MOU CV Hummasoft" id="example-date-input">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="example-date-input" class="col-sm-2 col-form-label">Jenis Arsip</label>
+                                            <div class="col-sm-5">
+                                                <input class="form-control" type="text" value="MOU" id="example-date-input">
+                                            </div>
+                                        </div>
 
-                                                                <a href=jenis-arsip.html>
-                                                                    <button class="btn btn-primary btn-sm" type="button">Simpan</button></a>
-                                                                </div>
-                                                                    
-                                                                </div> &nbsp &nbsp
-                                                                <div class="input-group-append">
+                                        <div class="form-group row">
+                                            <label for="example-date-input" class="col-sm-2 col-form-label">Tanggal Upload</label>
+                                            <div class="col-sm-5">
+                                                <input class="form-control" type="text" value="14/10/2021" id="example-date-input">
+                                            </div>
+                                        </div>
 
-                                                                <a href=jenis-arsip.html>
-                                                                    <button class="btn btn-danger btn-sm" type="button">Batal</button></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                         <div class="form-group row">
+                                        <label for="example-date-input" class="col-sm-2 col-form-label">File/jpg</label>
+                                        <div class="col-sm-3">
+                                            <div class="input-group">
+                                            <div class="input-group-prepend">
+                                            <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="inputGroupFile04">
+                                            <label class="custom-file-label" for="inputGroupFile04">MOU.pdf</label>
+                                        </div> 
+                                        <div class="input-group-append">
+                                        <button class="btn btn-primary" type="button">Upload</button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div> <!-- end col -->
-                        </div> <!-- end row -->
+                                </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    
+                                        <div class="col-sm-5">
+                                            
+                                        </div>
+                                        <div class="col-sm-5">
+                                    </div>
+                                                        <div class="col-md-10 offset-md-2">
+                                                    <div class="input-group mt-2">
+                                                        <div class="custom">
+                                                        <div class="input-group-append">
+
+                                                        <a href=data-arsip-mou.html>
+                                                            <button class="btn btn-primary" type="button">Simpan</button></a>
+                                                        </div>
+                                                            
+                                                        </div> &nbsp &nbsp
+                                                        <div class="input-group-append">
+
+                                                        <a href=data-arsip-mou.html>
+                                                            <button class="btn btn-danger" type="button">Batal</button></a>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                            </div> <!-- end col -->
+                                                        </div> <!-- end row -->
 
 
-                    </div><!-- container -->
+                                                    </div><!-- container -->
 
                 </div> <!-- Page content Wrapper -->
 
