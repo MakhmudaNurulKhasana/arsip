@@ -268,7 +268,7 @@
                                                         <div class="float-left">
                                                             <p>
                                                                 <a href=form-add-disposisi.html>
-                                                                    <button type="button" class="btn btn-info btn-sm">Tambah Disposisi</button></p>
+                                                                    <button type="button" class="btn btn-info btn-sm" id="tambah_disposisi">Tambah Disposisi</button></p>
                                                                 </a>
                                                             </div>
                                                                 <!-- <table class="table"> -->
@@ -277,21 +277,22 @@
 
                                                                     <thead>
                                                                         <tr>
+                                                                            <th></th>
                                                                             <th>No</th>
                                                                             <th>No. Surat</th>
                                                                             <th>Tanggal Surat</th>
-                                                                            <th>Tanggal Terima</th>
                                                                             <th>Asal Surat</th>
                                                                             <th>Aksi</th>
-                                                                            <th>Status</th>
+                                                                            <th>Oleh Divisi</th>
+                                                                            <th>Oleh Pimpinan</th>
                                                                         </tr>
                                                                     </thead>
                                                                     <tbody>
                                                                         <tr>
+                                                                            <td><input type="checkbox" disabled="true" /></td>
                                                                             <td>1</td>
                                                                             <td>SR-121</td>
                                                                             <td>1 Oktober 2021</td>
-                                                                            <td>4 Oktober 2021</td>
                                                                             <td>Politeknik Negeri Jember</td>
                                                                              <td><a href=update-surat-masuk.html>
                                                                         <button type="button" class="btn-primary">Edit</button></a>
@@ -302,14 +303,15 @@
                                                                              <a href=detail-surat-masuk.html>
                                                                             <button type="button" class="btn-warning">Detail</button></a>
                                                                         </td>
-                                                                        <td><a href="" class="fa fa-check"></a>
+                                                                        <td>Dilaksanakan
                                                                         </td>
+                                                                        <td>Disetujui</td>
                                                                         </tr>
                                                                         <tr>
+                                                                            <td><input type="checkbox"/></td>
                                                                             <td>2</td>
                                                                             <td>SR-122</td>
                                                                             <td>4 Oktober 2021</td>
-                                                                            <td>5 Oktober 2021</td>
                                                                             <td>Tokopedia</td>
                                                                              <td><a href=update-surat-masuk.html>
                                                                         <button type="button" class="btn-primary">Edit</button></a>
@@ -320,14 +322,15 @@
                                                                             <a href=detail-surat-masuk.html>
                                                                             <button type="button" class="btn-warning">Detail</button></a>
                                                                         </td>
-                                                                        <td><a href="" class="fa fa-check"></a>
+                                                                        <td>-
                                                                         </td>
+                                                                        <td>-</td>
                                                                         </tr>
                                                                         <tr>
+                                                                            <td><input type="checkbox" disabled="true" /></td>
                                                                             <td>3</td>
                                                                             <td>SR-123</td>
                                                                             <td>4 Oktober 2021</td>
-                                                                            <td>7 Oktober 2021</td>
                                                                             <td>Lazada</td>
                                                                              <td><a href=update-surat-masuk.html>
                                                                         <button type="button" class="btn-primary">Edit</button></a>
@@ -336,15 +339,15 @@
                                                                             <button type="button" class="btn-danger">Hapus</button></a>&nbsp
                                                                             <a href=detail-surat-masuk.html>
                                                                             <button type="button" class="btn-warning">Detail</button></a>
-                                                                            <td>
-                                                                            <a href="" class="fa fa-times"></a>
+                                                                            <td>Dilaksanakan
                                                                         </td>
+                                                                        <td>Diabaikan</td>
                                                                         </tr>
                                                                         <tr>
+                                                                            <td><input type="checkbox" disabled="true" /></td>
                                                                             <td>4</td>
                                                                             <td>SR-124</td>
                                                                             <td>4 Oktober 2021</td>
-                                                                            <td>8 Oktober 2021</td>
                                                                             <td>Shopee</td>
                                                                              <td><a href=update-surat-masuk.html>
                                                                         <button type="button" class="btn-primary">Edit</button></a>
@@ -355,8 +358,9 @@
                                                                             <a href=detail-surat-masuk.html>
                                                                             <button type="button" class="btn-warning">Detail</button></a>
                                                                         </td>
-                                                                        <td><a href="" class="fa fa-check"></a>
+                                                                        <td>Dilaksanakan
                                                                         </td>
+                                                                        <td>Disetujui</td>
                                                                         </tr>
                                                                     </tbody>
                                                                 </table>
@@ -407,13 +411,34 @@
 
                 <!-- App js -->
                 <script src="assets/js/app.js"></script>
-
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        //Assign Click event to Button.
+        $("#tambah_disposisi").click(function () {
+            var message = "Id Name                  Country\n";
+ 
+            //Loop through all checked CheckBoxes in GridView.
+            $("#Table1 input[type=checkbox]:checked").each(function () {
+                var row = $(this).closest("tr")[0];
+                message += row.cells[1].innerHTML;
+                message += "   " + row.cells[2].innerHTML;
+                message += "   " + row.cells[3].innerHTML;
+                message += "\n";
+            });
+ 
+            //Display selected Row data in Alert Box.
+            alert(message);
+            return false;
+        });
+    });
+</script>
             </body>
-<!--<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script>
     $('.checked-all').on('change', function(e){
     e.preventDefault()
     $('input[name=pilih]').prop('checked', this.checked)
-})-->
-</script>
+})
+</script> -->
 </html>
