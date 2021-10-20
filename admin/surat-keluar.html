@@ -268,22 +268,25 @@
                                                         <div class="float-left">
                                                             <p>
                                                                 <a href=#>
-                                                                    <button type="button" class="btn btn-info btn-sm">Teruskan</button></p>
+                                                                    <button type="button" class="btn btn-info btn-sm" id="teruskan">Teruskan</button></p>
                                                                 </a>
                                                                 </div>
                                                             
                                                                     <table class="table" >
                                                                         <thead>
                                                                             <tr>
+                                                                                <th></th>
                                                                                 <th>No</th>
                                                                                 <th>No. Surat</th>
                                                                                 <th>Tanggal Surat</th>
                                                                                 <th>Tujuan Surat</th>
                                                                                 <th>Aksi</th>
+                                                                                <th>Status</th>
                                                                             </tr>
                                                                         </thead>
                                                                         <tbody>
                                                                             <tr>
+                                                                                <td><input type="checkbox" disabled="true" /></td>
                                                                                 <td>1</td>
                                                                                 <td>SR-131</td>
                                                                                 <td>5 Oktober 2021</td>
@@ -297,8 +300,10 @@
                                                                              <a href=detail-surat-keluar.html>
                                                                             <button type="button" class="btn-warning">Detail</button></a>
                                                                         </td>
+                                                                        <td>Dibaca</td>
                                                                             </tr>
                                                                             <tr>
+                                                                                <td><input type="checkbox"/></td>
                                                                                 <td>2</td>
                                                                                 <td>SR-132</td>
                                                                                 <td>6 Oktober 2021</td>
@@ -311,6 +316,8 @@
                                                                             &nbsp
                                                                              <a href=detail-surat-keluar.html>
                                                                             <button type="button" class="btn-warning">Detail</button></a>
+                                                                        </td>
+                                                                        <td>-</td>
                                                                             </tr>
                                                                         </tbody>
                                                                     </table>
@@ -362,7 +369,28 @@
 
                     <!-- App js -->
                     <script src="assets/js/app.js"></script>
-
+                    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        //Assign Click event to Button.
+        $("#teruskan").click(function () {
+            var message = "Id Name                  Country\n";
+ 
+            //Loop through all checked CheckBoxes in GridView.
+            $("#Table1 input[type=checkbox]:checked").each(function () {
+                var row = $(this).closest("tr")[0];
+                message += row.cells[1].innerHTML;
+                message += "   " + row.cells[2].innerHTML;
+                message += "   " + row.cells[3].innerHTML;
+                message += "\n";
+            });
+ 
+            //Display selected Row data in Alert Box.
+            alert(message);
+            return false;
+        });
+    });
+</script>
                 </body>
 <!--<script>
     $('.checked-all').on('change', function(e){
