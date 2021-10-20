@@ -232,22 +232,47 @@
                                     <div class="container-fluid">
                                         <!-- end page title end breadcrumb -->
                                         <div class="row">
-                                            <div class="col-sm-12">
+                                            <div class="col-sm-12 col-md-6">
                                                 <div class="page-title-box">
                                                     <h4 class="page-title">Surat Keluar</h4>
                                                 </div>
                                             </div>
                                         </div>
+
                                         <div class="row">
-                                            <div class="col-12">
+                                            <div class="col-md-12">
                                                 <div class="card m-b-30">
                                                     <div class="card-body">
-                                                        <div class="float-left">
-                                                            
-                                                                </a>
+
+                                                            <div id="datatable_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                                                                <div class="row">
+                                                                    <div class="col-sm-12 col-md-6">
+                                                                        <div id="datatable_length" class="dataTables_length">
+                                                                            <label>
+                                                                                Show
+                                                                                <select class="custom-select custom-select-sm form-control form-control-sm" name="datatable_length" aria-controls="datatable">
+                                                                                    <option value="10">10</option>
+                                                                                    <option value="25">25</option>
+                                                                                    <option value="50">50</option>
+                                                                                    <option value="100">100</option>
+                                                                                </select>
+                                                                            </label>
+                                                                            
+                                                                        </div>
+                                                                    </div>
                                                                 
-                                                            </div>
-                                                            
+                                                                    <div class="col-sm-12 col-md-6">
+                                                                        <div id="datatable_filter" class="dataTables_filter" align="right"> 
+                                                                            <br>
+                                                                            <label>
+                                                                                <input type="search" class="form-control form-control-sm" placeholder="Search" aria-controls="datatable" >
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                        
+                                                            <div class="row">
+                                                                <div class="col-sm-12">
                                                             <table class="table" >
                                                                 <thead> <!-- untuk membuat kolom tabel -->
                                                                   <tr><th>No</th>
@@ -263,6 +288,15 @@
                                                                     <td>SR-121</td>
                                                                     <td>1 Oktober 2021</td>
                                                                     <td>Politeknik Negeri Jember</td>
+                                                                    <td>
+                                                                    <a href="lihat-suratkeluar.html"><button type="button" class="btn-warning">Detail</button></a>
+                                                                    </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                    <td>1</td>
+                                                                    <td>SR-122</td>
+                                                                    <td>2 Oktober 2021</td>
+                                                                    <td>PT Berkah</td>
                                                                     <td>
                                                                     <a href="lihat-suratkeluar.html"><button type="button" class="btn-warning">Detail</button></a>
                                                                     </td>
