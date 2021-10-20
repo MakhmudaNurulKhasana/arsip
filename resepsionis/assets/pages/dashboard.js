@@ -174,7 +174,7 @@
             {y: '2012', a: 75, b: 240, c:120},
             {y: '2013', a: 30, b: 30, c:30}
         ];
-        this.createAreaChart('morris-area-chart', 0, 0, $areaData, 'y', ['a', 'b', 'c'], ['Series A', 'Series B', 'Series C'], ['#ec536c', '#5b6be8', '#59ceb5']);
+        this.createAreaChart('morris-area-chart', 0, 0, $areaData, 'y', ['a', 'b'], ['Surat Masuk', 'Surat Keluar'], ['#ec536c', '#5b6be8']);
 
         //creating donut chart
         var $donutData = [
