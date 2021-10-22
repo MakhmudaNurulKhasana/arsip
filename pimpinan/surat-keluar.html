@@ -239,46 +239,85 @@
                                             </div>
                                         </div>
 
-                                        <div class="row">
-                                            <div class="col-md-12">
+                                        
+                        <div class="row">
+                                            <div class="col-12">
                                                 <div class="card m-b-30">
                                                     <div class="card-body">
-
-                                                            <div id="datatable_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
-                                                                <div class="row">
-                                                                    <div class="col-sm-12 col-md-6">
-                                                                        <div id="datatable_length" class="dataTables_length">
-                                                                            <label>
+                                                        <form action="" method=""></form>
+                                        <div class="container align-items-center">
+                                            <form action="">
+                                                <div class="row">
+                                                    <div class="form-group">
+                                                        <label for="inputMulaiTanggal" class="font-weight-bold">Mulai
+                                                            Tanggal :</label>
+                                                        <input type="date" id="inputMulaiTanggal" name="mulai_tanggal"
+                                                            class="form-control" name="tgl_pemasukan" required>
+                                                    </div>
+                                                    &nbsp&nbsp&nbsp&nbsp
+                                                    <div class="form-group">
+                                                        <label for="inputSampaiTanggal" class="font-weight-bold">Sampai
+                                                            Tanggal :</label>
+                                                        <input type="date" id="inputSampaiTanggal" name="sampai_tanggal"
+                                                            class="form-control" name="tgl_pemasukan" required>
+                                                    </div>
+                                                    <div class="col-sm-1 form-group">
+                                                        <label for="inputSampaiTanggal" class="font-weight-bold">
+                                                            <font color="white">Disetujui</font>
+                                                        </label>
+                                                        <button type="submit"
+                                                            class="btn btn-primary bt-sm">Cari</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <div id="datatable_wrapper"
+                                                                class="dataTables_wrapper dt-bootstrap4 no-footer">
+                                                                <div
+                                                                    class="row align-items-center justify-content-between">
+                                                                    <div class="col-auto py-2">
+                                                                        <div id="datatable_length"
+                                                                            class="dataTables_length d-flex align-items-center">
+                                                                            <label class="mr-3 mb-0">
                                                                                 Show
-                                                                                <select class="custom-select custom-select-sm form-control form-control-sm" name="datatable_length" aria-controls="datatable">
-                                                                                    <option value="10">10</option>
-                                                                                    <option value="25">25</option>
-                                                                                    <option value="50">50</option>
-                                                                                    <option value="100">100</option>
-                                                                                </select>
                                                                             </label>
-                                                                            
+                                                                            <select
+                                                                                class="custom-select custom-select-sm form-control form-control-sm"
+                                                                                name="datatable_length"
+                                                                                aria-controls="datatable">
+                                                                                <option value="10">10</option>
+                                                                                <option value="25">25</option>
+                                                                                <option value="50">50</option>
+                                                                                <option value="100">100</option>
+                                                                            </select>
+                                                                            <label class="mr-3 mb-0">
+                                                                                entries
+                                                                            </label>
                                                                         </div>
                                                                     </div>
-                                                                
+
                                                                     <div class="col-sm-12 col-md-6">
-                                                                        <div id="datatable_filter" class="dataTables_filter" align="right"> 
-                                                                            <br>
-                                                                            <label>
-                                                                                <input type="search" class="form-control form-control-sm" placeholder="Search" aria-controls="datatable" >
+                                                                        <div id="datatable_filter"
+                                                                            class="dataTables_filter" align="right">
+                                                                            <label class="m-0">
+                                                                                <input type="search"
+                                                                                    class="form-control form-control-sm"
+                                                                                    placeholder="Search"
+                                                                                    aria-controls="datatable">
                                                                             </label>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                        
-                                                            <div class="row">
-                                                                <div class="col-sm-12">
-                                                            <table class="table" >
+
+                                                                <div class="row">
+                                                                    <div class="col-sm-12">
+                                                                    </div>
+                                                                    <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                                                 <thead> <!-- untuk membuat kolom tabel -->
                                                                   <tr><th>No</th>
                                                                     <th>No Surat</th>
                                                                     <th>Tanggal Surat</th>
                                                                     <th>Tujuan Surat</th>
+                                                                    <th>Status</th>
                                                                     <th>Aksi</th></tr>
                                                                 </thead>
                                                                 <tfoot>
@@ -288,6 +327,7 @@
                                                                     <td>SR-121</td>
                                                                     <td>1 Oktober 2021</td>
                                                                     <td>Politeknik Negeri Jember</td>
+                                                                    <td><font color="green">Disetujui</font></td>
                                                                     <td>
                                                                     <a href="lihat-suratkeluar.html"><button type="button" class="btn-warning">Detail</button></a>
                                                                     </td>
@@ -297,6 +337,7 @@
                                                                     <td>SR-122</td>
                                                                     <td>2 Oktober 2021</td>
                                                                     <td>PT Berkah</td>
+                                                                    <td><font color="red">Tidak Disetujui</font></td>
                                                                     <td>
                                                                     <a href="lihat-suratkeluar.html"><button type="button" class="btn-warning">Detail</button></a>
                                                                     </td>
