@@ -61,8 +61,8 @@
                                     class="mdi mdi-file-document-box"></i><span> Data Arsip </span><span
                                     class="float-right"><i class="mdi mdi-chevron-right"></i></span></a>
                             <ul class="list-unstyled">
-                                <li><a href="jenis-arsip.html">Jenis Arsip</a></li>
-                                <li><a href="data-arsip.html">Data Arsip</a></li>
+                                <li><a href="jenis-dokumen.html">Jenis Arsip</a></li>
+                                <li><a href="data-dokumen.html">Data Arsip</a></li>
                             </ul>
                         </li>
 
@@ -73,7 +73,6 @@
                             <ul class="list-unstyled">
                                 <li><a href="surat-masuk.html">Surat Masuk</a></li>
                                 <li><a href="surat-keluar.html">Surat Keluar</a></li>
-                                <!-- <li><a href="disposisi.html">Disposisi</a></li> -->
                             </ul>
                         </li>
 
@@ -237,43 +236,37 @@
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="row">
-                            <div class="col-12">
-                                <div class="card m-b-30">
-                                    <div class="card-body">
-                                        <!-- <div class="float-left"> -->
+                                            <div class="col-12">
+                                                <div class="card m-b-30">
+                                                    <div class="card-body">
+                                                        <form action="" method=""></form>
+                                        <div class="container align-items-center">
                                             <p>
-                                                <a href=form-add-data-cv.html>
-                                                    <button type="button" class="btn btn-info btn-sm" id="">Tambah Data</button>
-                                                </a>
-                                            </p>
-                                        <form action="" method=""></form>
-                        <div class="container align-items-center">
-                            <form action="">
-                                <div class="row">
-                                    <div class="form-group">
-                                        <label for="inputMulaiTanggal" class="font-weight-bold">Mulai
-                                            Tanggal :</label>
-                                        <input type="date" id="inputMulaiTanggal" name="mulai_tanggal"
-                                            class="form-control" name="tgl_pemasukan" required>
+                                            <a href=form-add-data-dokumen.html>
+                                                <button type="button" class="btn btn-info btn-sm">Tambah Data</button></p>
+                                            </a>
+                                            <form action="" method=""></form>
+                                        <div class="container align-items-center">
+                                        <form action="">
+                                        <div class="row">
+                                        <div class="form-group">
+                                        <label for="inputMulaiTanggal" class="font-weight-bold">Mulai Tanggal :</label>
+                                        <input type="date" id="inputMulaiTanggal" name="mulai_tanggal" class="form-control" name="tgl_pemasukan" required>
+                                        </div>
+                                        &nbsp&nbsp&nbsp&nbsp
+                                        <div class="form-group">
+                                        <label for="inputSampaiTanggal" class="font-weight-bold">Sampai Tanggal :</label>
+                                        <input type="date" id="inputSampaiTanggal" name="sampai_tanggal" class="form-control" name="tgl_pemasukan" required>
+                                        </div>
+                                        <div class="col-sm-1 form-group">
+                                        <label for="inputSampaiTanggal" class="font-weight-bold"><font color="white">Disetujui</font></label>
+                                        <button type="submit" class="btn btn-primary bt-sm">Cari</button>
+                                        </div>
                                     </div>
-                                                    &nbsp&nbsp&nbsp&nbsp
-                                                    <div class="form-group">
-                                                        <label for="inputSampaiTanggal" class="font-weight-bold">Sampai
-                                                            Tanggal :</label>
-                                                        <input type="date" id="inputSampaiTanggal" name="sampai_tanggal"
-                                                            class="form-control" name="tgl_pemasukan" required>
-                                                    </div>
-                                                    <div class="col-sm-1 form-group">
-                                                        <label for="inputSampaiTanggal" class="font-weight-bold">
-                                                            <font color="white">Disetujui</font>
-                                                        </label>
-                                                        <button type="submit"
-                                                            class="btn btn-primary bt-sm">Cari</button>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                            <div id="datatable_wrapper"
+                                </form>
+                                                                            <div id="datatable_wrapper"
                                                                 class="dataTables_wrapper dt-bootstrap4 no-footer">
                                                                 <div
                                                                     class="row align-items-center justify-content-between">
@@ -311,10 +304,12 @@
                                                                     </div>
                                                                 </div>
 
-                                                                <div class="row">
-                                                                    <div class="col-sm-12">
-                                        </div>
-                                        <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                                        <div class="row">
+                                                                <div class="col-sm-12">
+                                                                    
+                                                                </div>
+                                                                    <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+
                                                             <thead>
                                                                 <tr>
                                                                    
@@ -363,7 +358,7 @@
                                                                     <td>3</td>
                                                                     <td>CV CV Hummasoft</td>
                                                                     <td>CV</td>
-                                                                    <td>10/10/2021</td>
+                                                                    <th>10/10/2021</th>
                                                                     <td><a href=form-edit-data-cv.html>
                                                                         <button type="button" class="btn-primary">Edit</button></a>
                                                                         &nbsp

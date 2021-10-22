@@ -179,7 +179,7 @@
         //creating donut chart
         var $donutData = [
             {label: "Disetujui", value: 40},
-            {label: "Belum Disetujui", value: 30},
+            {label: "Diabaikan", value: 30},
         ];
         
         this.createDonutChart('morris-donut-example', $donutData, [ 'rgba(211, 218, 232,0.8)','rgba(64, 164, 241,0.8)', 'rgba(236, 83, 108,0.8)']);
